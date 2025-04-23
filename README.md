@@ -2,8 +2,6 @@
 
 **A personalized task management app that helps users organize their day with intuitive tools, visual inspiration, and flexible task tracking. Built with Flask, Python, JavaScript, and SQLite, the app features a dynamic front-end paired with an efficient back-end for a seamless experience.**
 
-[▶️ **Video Demo**](https://youtu.be/qaoZ3I1CrKg)
-
 ---
 
 ## Features
