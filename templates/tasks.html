@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <div id="atask" class="section">
+        <h1>Add a Task</h1>
+        <div>
+            <form action="/tasks.html" method="post" autocomplete="off" autofocus>   
+                <input name="task" type="text" required><br>
+                <label for="time">Select a time (optional):</label>
+                <input name="time" type="time"><br>
+                <select id="importance" name="importance">
+                    <option value="Must">Must do today</option>
+                    <option value="Might">Might do today</option>
+                </select>
+                <br>
+                <input type="submit" value="Submit" onclick="myFunction()">
+                <script>
+                    function myFunction() {
+                      alert("Task Added!");
+                    }
+                    </script>                    
+            </form>
+        </div>
+        <img class="pic" src="https://cdn.dribbble.com/users/4241563/screenshots/11874468/media/7796309c77cf752615a3f9062e6a3b3d.gif">
+    </div>
+{% endblock %}

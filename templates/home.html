@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<br>
+<div id="bg2">
+    <br>
+    <p id="quote">
+        {{ phrase }} <br> <address>{{ author }}</address>
+    </p>
+</div>
+<h1>Design your day</h1>
+<br>
+<p>Take part in planning your own day. You can write today's goals or set specific hours for every task.<br> Don't forget to leave room for changes, because life is unpredictable. <br>
+Enjoy spontaneity in your controled environment</p>
+<hr>
+<div class="header">
+    <h3>Plans for Today:</h3>
+</div>
+<div class="container">
+    <div class="tasklist">
+        <table style="width:100%">
+            <tr>
+                <th>#</th>
+                <th>Task</th>
+                <th>Time</th> 
+                <th>Importance</th>
+                <th></th>
+            </tr>
+            {% for row in tasks %} 
+                <tr>
+                    <td>
+                        <select class="status" name="status">
+                            <option value="do">🚫</option>
+                            <option value="progress">⏳</option>
+                            <option value="done">✅</option>
+                        </select>
+
+                        <script>
+                            var statuses = document.getElementsByClassName('status');
+                            for (var i = 0; i < statuses.length; i++) {
+                                (function(index) {
+                                    statuses[index].addEventListener('change', function() {
+                                        localStorage.setItem('selectedStatus' + index, this.value);
+                                    });
+                                })(i);
+                            }
+
+                            window.onload = function() {
+                                var statuses = document.getElementsByClassName('status');
+                                for (var i = 0; i < statuses.length; i++) {
+                                    var selectedStatus = localStorage.getItem('selectedStatus' + i);
+                                    if (selectedStatus) {
+                                        statuses[i].value = selectedStatus;
+                                    }
+                                }
+                            };
+                        </script>
+                    </td>
+                    <td>{{ row[1] }}</td>
+                    <td>{{ row[2] }}</td>
+                    <td>{{ row[3] }}</td>
+                    <td>
+                        <form action="/" method="post">
+                            <input type="hidden" name="id" value="{{ row[0] }}">
+                            <input type="submit" value="❌" name="del" id="del">
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+      </table>
+    </div>
+</div>    
+{% endblock %}

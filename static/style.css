@@ -1,0 +1,231 @@
+
+body {
+  background-color: #ffffe6;
+  font-family: monospace;
+}
+
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  background-color: #ffd966;
+}
+
+.container-fluid {
+  padding-left: 15px;
+  padding-right: 10px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border: solid grey 0.5px;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {height: 450px}
+
+/* Set gray background color and 100% height */
+.sidenav {
+  padding: center;
+  padding-right: 15px;
+  padding-top: 20px;
+  background-color: #e6ffb3;
+  min-height: 130vh;
+  height: auto;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+  background-color: #334d00;
+  color: white;
+  padding: 15px;
+}
+
+footer p {
+font-family: Papyrus;
+font-size: 20px;
+font-weight: bold;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {height:auto;} 
+}
+
+#bg1 {
+  text-align: center;
+  font-size: 15px;
+  
+}
+
+#bg1 h1 {
+  text-shadow: 2px 2px #e6ffb3;
+  padding-top: 30px;
+  color: #408000;
+  font-size: 60px;
+  font-family: Papyrus;
+  font-weight: bold;
+}
+
+#bg2 {
+  background-color: #ffeb99;
+  border-radius: 20px;
+  border: 2px grey solid;
+  margin: auto;
+  opacity: 0.7;
+}
+
+h3 {
+  text-align: center;
+  padding-top: 20px;
+  color: #408000;
+  font-size: 40px;
+  font-family: Papyrus;
+  font-weight: bold;
+}
+
+#quote {
+  font-family: Papyrus;
+  font-size: 25px;
+  color: #408000;
+}
+
+iframe {
+  width: 130%;
+  height: 100%;
+  border: 1px solid black;
+  position: relative;
+  zoom: 1.2;
+   -moz-transform: scale(0.75);
+   -moz-transform-origin: 0 0;
+   -o-transform: scale(0.75);
+   -o-transform-origin: 0 0;
+   -webkit-transform: scale(0.75);
+   -webkit-transform-origin: 0 0;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    width: 90%;
+}
+
+.section {
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+}
+
+
+
+table {
+    background-color: transparent;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+table th, table td {
+    padding: 0.75rem;
+    vertical-align: middle;
+}
+
+tbody tr:nth-of-type(odd) {
+    background-color: rgb(179, 208, 255, 0.3)
+}
+
+input[type=text], select {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=text]:focus {
+  background-color: lightblue;
+}
+
+input[type=submit] {
+  width: 60%;
+  background-color: #334d00;
+  color: white;
+  padding: 17px 20px;
+  margin: 18px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#atask {
+  border-radius: 5px;
+  background-color: #ffffe6;
+  padding: 20px;
+  font-family: monospace;
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+input[type=submit]:hover {
+  background-color: #336699;
+}
+
+#importance {
+  width: 30%;
+}
+
+#atask input, select, #goal {
+  margin-top: 16px;
+}
+
+.pic {
+  width:60%;
+  height: auto;
+  padding-top: 50px;
+  border-radius: 80%;
+}
+
+
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+  text-align: center;
+  margin-top: 30px;
+}
+th, td {
+  background-color: #96D4D4;
+}
+
+.status, #del {
+  background-color: transparent;
+  font-size: 20px;
+  width: auto;
+  height: auto;
+  padding: 0;
+}
+
+.yoga {
+  width: 100%;
+  height: auto;
+}
+
+.tip {
+  width: 87%;
+  height: auto;
+  padding: 7px;
+}
+
+.container.text-center {
+  display: flex;
+  flex-direction: row;
+}

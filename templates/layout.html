@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <link href="/static/style.css" rel="stylesheet">
+        <script type="text/javascript" src="/static/script.js"></script>
+
+        <title>Design your Day</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                    </button>
+                    <img src="https://media.istockphoto.com/id/1295727263/vector/hand-drawn-sunflower-vector-illustration.jpg?s=612x612&w=0&k=20&c=ogzlccCe1Xq6y8FdsEFYqClMhkTAUWfZlvoUZA7rTzg=" class="logo" alt="logo">
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="tasks.html">Tasks</a></li>
+                    <li><a href="suggest.html">Suggestions</a></li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="container-fluid text-center">    
+                <div class="row content">
+                    <div class="col-sm-2 sidenav">
+                        <h5><b><u>Choose your music to set today's mood:</u></b></h5><br>
+                        <p><b>Relaxing</b> music <b>Relieves</b> stress, Anxiety and Depression 🌿 
+                        <iframe src="https://www.youtube.com/embed/DJzBe7QP9zo?si=EoeOOy1XRG7wjK71" title="YouTube video player" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+                        web-share" allowfullscreen></iframe>
+                        </p>
+                        <p>Improve your <b>Focus</b> and <b>Concentration</b> 🙏
+                            <iframe src="https://www.youtube.com/embed/4GnVDPD01as?si=u_CISgXsTP4luovt" 
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                            gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </p>
+                        <p>Start the day with <b>Happy Upbeat</b> music 🙂
+                            <iframe src="https://www.youtube.com/embed/CadnrbchPlw?si=UnqCQOwLd3lSj_Vt"
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                            gyroscope; picture-in-picture; web-share" allowfullscreen>music link</iframe>
+                        </p>
+                    </div>
+                    <div class="col-sm-8 text-left" id="bg1"> 
+                        {% block body %}{% endblock %}
+                    </div>
+                    <div class="col-sm-2 sidenav">
+                        <div class="well">
+                            <p>
+                                Try some yoga positions to "soften" your day<br>
+                                <img class="yoga" src="https://media0.giphy.com/media/Q06wayqe0Usx5PTJYg/giphy.gif" alt="Yoga position">
+                            </p>
+                        </div>
+                        <div class="well">
+                            <p>
+                                <img class="yoga" src="https://media.tenor.com/M237db--qOgAAAAM/yoga-yogi.gif" alt="Yoga position">
+                            </p>
+                        </div>
+                        <div class="well">
+                            <p>
+                                <img class="yoga" src="https://media.baamboozle.com/uploads/images/251638/1619754356_38820_gif-url.gif" alt="Yoga position">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="container-fluid text-center">
+            <hr>
+            <p>“Find out who you are and be that person. That's what your soul was put on this earth to be.<br> 
+            Find the truth, live that truth, and everything else will come.” <address>—Ellen DeGeneres</address></p>
+        </footer>
+    </body>
+</html>
